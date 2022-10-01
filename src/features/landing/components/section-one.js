@@ -1,13 +1,13 @@
 import Navbar from "../../../components/navbar"
 
-export const SectionOne = () => {
+const SectionOne = () => {
     return (
         <div className="h-screen w-screen relative bg-cover bg-center bg-[url('/src/assets/images/img1.jpg')]">
             <div className="sticky z-20">
                 <Navbar />
             </div>
 
-            <div className="flex flex-col w-full items-center mt-20 gap-y-2 justify-center">
+            <div className="flex flex-col w-full items-center mt-12 gap-y-2 justify-center">
                 <p className="text-4xl font-black">Model X</p>
                 <p className="font-light text-lg">Plaid</p>
             </div>
@@ -39,3 +39,5 @@ export const SectionOne = () => {
         </div>
     )
 }
+
+export default SectionOne

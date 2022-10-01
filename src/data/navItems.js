@@ -1,14 +1,12 @@
 export const mainNavItems = [
-    { title: "Model S" },
-    { title: "Model 3" },
-    { title: "Model X" },
-    { title: "Model Y" },
-    { title: "Solar Roof" },
-    { title: "Solar Panels" },
+    { title: "4 Bedroom EXT" },
+    { title: "4 Bedroom" },
+    { title: "3 Bedroom EXT" },
+    { title: "3 Bedroom" },
+    { title: "2 Bedroom" }
 ]
 
 export const secNavItems = [
     { title: "Shop" },
-    { title: "Account" },
     { title: "Menu" },
 ]

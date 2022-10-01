@@ -44,3 +44,11 @@ body {
 .btn-border-dark {
   @apply border-2 font-bold border-dark rounded-md w-full py-1
 }
+
+.caption-xs {
+  @apply text-xs font-gothamLight
+}
+
+.caption-sm {
+  @apply text-sm font-gothamLight
+}
