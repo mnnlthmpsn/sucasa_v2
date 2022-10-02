@@ -1,5 +1,6 @@
 import { motion, AnimateSharedLayout } from "framer-motion"
 import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 import { mainNavItems, secNavItems } from "../data/navItems"
 import { Menu } from "./menu"
 
@@ -8,13 +9,15 @@ const Navbar = () => {
 
     const [selected, setSelected] = useState("")
     const [showMenu, setShowMenu] = useState(false)
+    const router = useNavigate()
 
     const toggle = () => setShowMenu(!showMenu)
+    const toRoute = route => router(route)
 
     return (
         <div>
             <div className="h-10 bg-white flex justify-center items-center">
-                <p className="font-gothamLight text-sm">Some Moving text here</p>
+                <p className="font-gothamLight text-sm underline underline-offset-4 cursor-pointer">Read our Blog</p>
             </div>
             <AnimateSharedLayout>
                 <div className="flex w-screen justify-between items-center px-10 py-3">
@@ -28,6 +31,7 @@ const Navbar = () => {
                                 title={menu.title}
                                 isSelected={selected === menu.title}
                                 onMouseEnter={() => setSelected(menu.title)}
+                                onClick={() => toRoute(menu.route)}
                             // onMouseLeave={() => setSelected("")}
                             />
                         ))}
@@ -39,7 +43,7 @@ const Navbar = () => {
                                 title={menu.title}
                                 isSelected={selected === menu.title}
                                 onMouseEnter={() => setSelected(menu.title)}
-                                onClick={menu.title.toLowerCase() === 'menu' && toggle}
+                                onClick={menu.title.toLowerCase() === 'menu' ? toggle : () => toRoute(menu.route)}
                             // onMouseLeave={() => setSelected("")}
                             />
                         ))}

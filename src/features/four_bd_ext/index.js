@@ -10,7 +10,7 @@ import SectionNine from "./components/section-nine"
 import SectionTen from "./components/section-ten"
 
 
-const LandingPage = () => {
+const FourBedroomExtended = () => {
     return (
         <div className="h-screen w-screen overflow-x-hidden overflow-y-scroll">
             <SectionOne />
@@ -29,4 +29,4 @@ const LandingPage = () => {
     )
 }
 
-export default LandingPage
+export default FourBedroomExtended

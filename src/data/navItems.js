@@ -1,12 +1,12 @@
 export const mainNavItems = [
-    { title: "4 Bedroom EXT" },
-    { title: "4 Bedroom" },
-    { title: "3 Bedroom EXT" },
-    { title: "3 Bedroom" },
-    { title: "2 Bedroom" }
+    { title: "4 Bedroom", route: "/" },
+    { title: "4 Bedroom EXT", route: "/four-extended" },
+    { title: "3 Bedroom", route: "/three" },
+    { title: "3 Bedroom EXT", route: "/three-extended" },
+    { title: "2 Bedroom", route: "/two" }
 ]
 
 export const secNavItems = [
-    { title: "Shop" },
+    { title: "Shop", route: "/shop" },
     { title: "Menu" },
 ]
