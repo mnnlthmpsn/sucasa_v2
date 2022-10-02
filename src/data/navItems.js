@@ -7,6 +7,6 @@ export const mainNavItems = [
 ]
 
 export const secNavItems = [
-    { title: "Shop", route: "/shop" },
+    { title: "Shop", route: "/" },
     { title: "Menu" },
 ]

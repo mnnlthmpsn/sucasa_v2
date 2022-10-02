@@ -1,7 +1,9 @@
 import { motion, AnimateSharedLayout } from "framer-motion"
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
+import images from "../assets/images"
 import { mainNavItems, secNavItems } from "../data/navItems"
+import BlogCarousel from "./blogCarousel"
 import { Menu } from "./menu"
 
 
@@ -16,15 +18,19 @@ const Navbar = () => {
 
     return (
         <div>
-            <div className="h-10 bg-white flex justify-center items-center">
-                <p className="font-gothamLight text-sm underline underline-offset-4 cursor-pointer">Read our Blog</p>
+            <div className="flex justify-center w-screen">
+            <div className="h-10 w-full bg-white flex relative justify-center items-center space-x-2 pr-96">
+                <p className="font-gothamLight text-xs underline underline-offset-4 cursor-pointer">Read our Blog</p>
+                <BlogCarousel />
+            </div>
             </div>
             <AnimateSharedLayout>
                 <div className="flex w-screen justify-between items-center px-10 py-3">
                     <div>
-                        <p className="text-2xl font-bold">Sucasa</p>
+                        <img src={images.logoFull} alt="logo" className="h-24 w-auto absolute top-6" />
+                        {/* <p className="text-2xl font-bold">Sucasa</p> */}
                     </div>
-                    <div className="absolute flex w-full items-center justify-center">
+                    <div className="absolute flex w-full items-center justify-center select-none">
                         {mainNavItems.map((menu, index) => (
                             <Item
                                 key={index}
@@ -36,7 +42,7 @@ const Navbar = () => {
                             />
                         ))}
                     </div>
-                    <div className="flex items-center justify-center">
+                    <div className="flex items-center justify-center select-none">
                         {secNavItems.map((menu, index) => (
                             <Item
                                 key={index}

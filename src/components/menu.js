@@ -1,4 +1,4 @@
-// import { XIcon } from '@heroicons/react/solid'
+import { XIcon } from '@heroicons/react/solid'
 
 export const Menu = ({ toggle, setToggle }) => {
 
@@ -19,8 +19,8 @@ export const Menu = ({ toggle, setToggle }) => {
             <div className="h-full absolute w-full bg-white/10 backdrop-blur-sm" onClick={setToggle}></div>
             <div className={`${ toggle ? 'translate-x-0' : 'translate-x-full' } bg-white h-screen fixed w-1/5 right-0 z-60 duration-300`}>
                 <div className="flex justify-end p-12">
-                    {/* <XIcon className='h-6 cursor-pointer' onClick={setToggle}/> --comment */}
-                    <p onClick={setToggle}>x</p>
+                    <XIcon className='h-6 cursor-pointer' onClick={setToggle}/>
+                    {/* <p onClick={setToggle}>x</p> */}
                 </div>
 
                 <div className="flex flex-col px-8 space-y-2">

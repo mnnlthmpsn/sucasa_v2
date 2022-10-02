@@ -15,9 +15,13 @@ import img9 from './img9.jpg'
 import img10 from './img10.jpg'
 import img11 from './img11.jpg'
 
+import logoFull from './logo_full.png'
+import logo from './logo.png'
+
 const images = {
     slide1, slide2, slide3, slide4,
-    img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11
+    img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11,
+    logo, logoFull
 }
 
 export default images

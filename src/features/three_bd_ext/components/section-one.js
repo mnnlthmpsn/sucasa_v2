@@ -2,7 +2,7 @@ import Navbar from "../../../components/navbar"
 
 const SectionOne = () => {
     return (
-        <div className="h-screen w-screen relative bg-cover bg-center bg-[url('/src/assets/images/img1.jpg')]">
+        <div className="h-screen w-screen relative bg-cover bg-center bg-[url('/src/assets/images/img9.jpg')]">
             <div className="sticky z-20">
                 <Navbar />
             </div>
