@@ -11,7 +11,9 @@ module.exports = {
         gothamBold: ['Gotham-Bold']
       },
       colors: {
-        dark: '#171a20'
+        dark: '#171a20',
+        primary: '#143931',
+        secondary: '#b78c48'
       }
     },
   },

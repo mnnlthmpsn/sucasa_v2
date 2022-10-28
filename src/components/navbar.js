@@ -64,7 +64,7 @@ const Navbar = () => {
 
 const Item = props => {
     return (
-        <p className="item relative flex items-center justify-center duration-200 px-4 cursor-pointer text-sm py-[5px]" onClick={props.onClick} onMouseEnter={props.onMouseEnter} onMouseLeave={props.onMouseLeave}>
+        <p className="item relative text-white flex items-center justify-center duration-200 px-4 cursor-pointer text-sm py-[5px]" onClick={props.onClick} onMouseEnter={props.onMouseEnter} onMouseLeave={props.onMouseLeave}>
             {props.isSelected && (
                 <motion.div
                     layoutId="link-bg"

@@ -1,8 +1,16 @@
 import Navbar from "../../../components/navbar"
+import images from "../../../assets/images"
 
 const SectionOne = () => {
     return (
-        <div className="h-screen w-screen relative bg-cover bg-center bg-[url('/src/assets/images/img1.jpg')]">
+        <div className="h-screen w-screen relative">
+
+            <div className="absolute w-full h-full">
+                <img src={images.img4_1} alt="img" className="w-full h-full object-cover" />
+            </div>
+
+            <div className="absolute h-full w-full bg-primary opacity-30"></div>
+
             <div className="sticky z-20">
                 <Navbar />
             </div>
